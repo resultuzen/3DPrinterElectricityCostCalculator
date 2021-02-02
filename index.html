@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<title>3B Yazıcı Güç Tüketim Hesaplama Uygulaması</title>
+<title>3B Yazıcı Elektrik Maliyeti Hesaplama Uygulaması</title>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <meta name="viewport" content="width=device-width" />
 
@@ -42,14 +42,28 @@
                             <h5 class="info-text">Hangi verilere sahipsiniz?</h4>
                         </div>
 
+                        <div class="col-sm-4 col-sm-offset-35">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="material-icons">group</i></span>
+                              <div class="form-group label-floating">
+                                <label class="control-label">Abonelik Türü</label>
+                                <select name="abonelikTuru" class="form-control">
+                                    <option disabled="" selected=""></option>
+                                    <option value="ev"> Ev </option>
+                                    <option value="isyeri"> İşyeri </option>
+                                </select>
+                              </div>
+                          </div>
+                        </div>
+
                         <div class="col-sm-8 col-sm-offset-35">
                           <div class="input-group">
                             <span class="input-group-addon"> <i class="material-icons" rel="tooltip" title="Motorunuzun mevcut adım sayısını buraya giriniz.">bolt</i></span>
                               <div class="form-group label-floating">
-                                <label class="control-label">Güç Tüketimi</label>
+                                <label class="control-label">Tüketilen Güç</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control">
-                                    <span class="input-group-addon">W</span>
+                                    <span class="input-group-addon">W/saat</span>
                                 </div>
                               </div>
                           </div>
@@ -66,29 +80,30 @@
                                     <span class="input-group-addon">dk</span>
                                 </div>
                             </div>
-
                           </div>
                         </div>
+
                     </div>
                    </div>
 
                     <div class="tab-pane" id="sonucVerileri">
                       <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2"> <h5 class="info-text">Nasıl bir sonuç çıktı?</h4> </div>
-                        <div class="input-group col-sm-3 col-sm-offset-45">
+                        <div class="col-sm-8 col-sm-offset-2"> <h5 class="info-text">Nasıl bir maliyet çıktı?</h4> </div>
+                        <div class="input-group col-sm-4 col-sm-offset-4">
                           <div class="input-group">
                             <span class="input-group-addon">
-                              <i class="material-icons" rel="tooltip" title="Motorunuzun mevcut adım sayısını yeni değerle değiştirebilirsiniz.">push_pin</i>
+                              <i class="material-icons" rel="tooltip" title="Motorunuzun mevcut adım sayısını yeni değerle değiştirebilirsiniz.">price_check</i>
                             </span>
                             <div class="form-group label-floating">
-                                <label class="control-label">Yeni Adım Değeri</label>
+                                <label class="control-label">Elektrik Tüketim Tutarı</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" value="1000" disabled>
-                                    <span class="input-group-addon">mm</span>
+                                    <input type="text" class="form-control" value="15" disabled>
+                                    <span class="input-group-addon">₺</span>
                                 </div>
                             </div>
                           </div>
                         </div>
+
                       </div>
                     </div>
                 </div>
